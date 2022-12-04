@@ -58,3 +58,15 @@ console.log(typeof n.toString());
 console.log(typeof (n + ""));
 
 console.log(typeof String(n));
+
+//? str --> number çevirme
+
+let str = "123";
+console.log(typeof str);
+console.log(typeof Number(str));
+console.log(typeof parseInt(str));
+console.log(typeof +str);
+console.log(typeof parseFloat(str));
+
+console.log(parseFloat("5.5"));
+console.log(parseInt("5.5"));
