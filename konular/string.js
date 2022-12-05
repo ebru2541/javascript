@@ -62,6 +62,7 @@ console.log(typeof String(n));
 //? str --> number çevirme
 
 let str = "123";
+let num = 123;
 console.log(typeof str);
 console.log(typeof Number(str));
 console.log(typeof parseInt(str));
@@ -70,3 +71,6 @@ console.log(typeof parseFloat(str));
 
 console.log(parseFloat("5.5"));
 console.log(parseInt("5.5"));
+
+//? lenght str kullanılır numberda kullanılmaz
+console.log(str.length);
