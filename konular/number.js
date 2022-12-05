@@ -52,3 +52,8 @@ console.log(say.toPrecision(3));
 
 //? toFixed() virgülden sonra ekrana kaç basamak yazılacağını gösterir
 console.log(say.toFixed(2));
+
+//? sıralama
+const sayı = [2, 22, 4, 66, 8];
+const sayı1 = sayı.sort((a, b) => b - a);
+console.log(sayı1);

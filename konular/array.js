@@ -47,3 +47,24 @@ console.log(er1);
 //* dizide aradan eleman silmek
 delete araba[1];
 console.log(araba);
+
+//*ters çevirme
+araba.reverse();
+console.log(araba);
+
+//*sıralama buyuk-kucuk harf önemli
+const harf = ["a", "b", "k", "d"];
+const harf1 = harf.sort();
+console.log(harf1);
+
+//? diziye erişim metodları
+//* includes() dizinin eleman içerip içermediğine bakar T/F
+console.log(harf.includes("d"));
+
+//*join() dizinin elemanlarını birleştirir ve str yapar
+const sayılar = [1, 2, 5, 7, 3, 9];
+console.log(sayılar.join("-"));
+console.log(sayılar.join(""));
+console.log(sayılar.join("ve"));
+
+//*
