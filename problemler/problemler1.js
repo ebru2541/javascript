@@ -91,18 +91,17 @@ console.log(fark(30));
 // console.log(dikDotrgen(20, 15));
 
 //? dairenin alanını bulun
-function daire(r){
-  let pi=3.14
-  let alan= pi * r * r
-  let cevre=2 *pi * r
-  return  alan, cevre
-}
-console.log(daire(3));
-console.log()
+// function daire(r){
+//   let pi=3.14
+//   let alan= pi * r * r
+//   let cevre=2 *pi * r
+//   return  alan, cevre
+// }
+// console.log(daire(3));
+// console.log()
 // `alan=${alan}, cevre=${cevre}`;
 
 
-//! ODEV2
 //! Clarusway'deki haftalik ders ve etkinlik programinizi,
 //! console'dan girilen gun degerine gore cikti veren kodu
 //! switch-case yapisi ile yaziniz.
@@ -140,3 +139,27 @@ console.log()
           break;
       }
       console.log(`Bugunku programiniz: ${program}`);
+
+      //? Dort Islem Hesap Makinasi (2 Sayı bir operator, if-elseif)
+function calculator(a, b, islem) {
+  if (islem === "+") {
+    return a + b;
+  } else if (islem === "-") {
+    return a - b;
+  } else if (islem === "*") {
+    return a * b;
+  } else if (islem === "/") {
+    return a / b;
+  }
+  else{
+    return `+, *, *, / işlemlerinden birini seçiniz`
+  }
+}
+console.log(calculator(2, 4, "+"));
+
+//?Maasi asgari ucretten az olanlara %50 zam,fazla olanlara ise %10 zam yapmak istiyoruz.
+
+let maas=prompt("maaşınızı yazınız: ")
+let asgariUcret=5500
+let maasHes= maas > asgariUcret ? maas*1.1 : maas*1.5
+console.log( `yeni maaşınız: ${maasHes}`);
