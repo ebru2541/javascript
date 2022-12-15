@@ -113,3 +113,30 @@ console.log()
 //! Cumartesi ->  InClass + Workshop
 //! Pazar -> Self-Study
 //! Aksi takdirde -> Yanlis gun girildi.
+
+      const day = prompt("Programini istediginiz gunu giriniz:");
+
+      let program;
+
+      switch (day) {
+        case "pazartesi":
+        case "sali":
+        case "carsamba":
+        case "persembe":
+          program = "InClass";
+          break;
+        case "cuma":
+          program = "Teamwork";
+          break;
+        case "cumartesi":
+          program = "InClass + Workshop";
+          break;
+        case "pazar":
+          program = "Self-Study";
+          break;
+
+        default:
+          alert("Yanlis gun girildi.");
+          break;
+      }
+      console.log(`Bugunku programiniz: ${program}`);
