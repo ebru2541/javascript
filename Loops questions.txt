@@ -1,0 +1,37 @@
+// Soru-1  1000 ile 2000 arasındaki 13 e bölümünden 3 kalan sayıları konsola yazdırınız ?
+
+// Soru-2  Kullanıcıdan alınan 5 sayının ortalamasını konsola yazdırınız ?
+
+// Soru-3 Kullanıcıdan alınan sayıları negatif girilene kadar toplayan ve konsola yazan kodu yazınız ?
+
+// Soru-4 Sizden 1'den 100'e kadar sayıları yazdırmanız istenmektedir ancak 3'ün katlarına gelince 'Fizz',
+ 5'in katlarına gelince 'Buzz'.Hem 3'ün hemde 5'in katlarına gelince 'FizzBuzz' yazdırmanız istenmektedir ?
+
+// Soru-5 bir sayının(number) basamak sayısını yazdıran kodu yazınız ?
+
+// Soru-6 Kullanıcıdan alınan n adet kadar olan Fibonacci dizisini konsola yazdırınız ?  //0 1 1 2 3 5 8 13
+
+// soru-7 Aşağıdaki çıktıyı konsola yazdırınız ?
+
+// * * * * *
+// * * * * *
+// * * * * *
+// * * * * *
+// * * * * *
+
+// soru-8 Aşağıdaki çıktıyı konsola yazdırınız ?
+
+// O
+// OO
+// OOO
+// OOOO
+// OOOOO
+// OOOOOO
+// OOOOOOO
+
+// soru-9 Aşağıdaki çıktıyı konsola yazdırınız ?
+
+//    O
+//   OOO
+//  OOOOO
+// OOOOOOO
