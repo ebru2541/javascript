@@ -101,10 +101,24 @@ console.log(reverseText("Clarusway Rocks!"));
 //* ya da
 
 function reverseText1(metin) {
-    let newReverse=""
+  let newReverse = "";
   for (let i = metin.length - 1; i >= 0; i--) {
-   newReverse+=metin[i]
+    newReverse += metin[i];
   }
   return newReverse;
 }
 console.log(reverseText1("Clarusway Rocks!"));
+
+//? 9- Input : 'Clarusway' => Output : 'Clarusway'
+//?Input : 'days. big make things Little' => Output : 'Little things make big days.'
+
+const reverseWords = (word) => {
+  let words = word.split(" ");
+  if (words.length >= 2) {
+    return words.reverse().join(" ");
+  } else {
+    return word
+  }
+};
+console.log(reverseWords("Clarusway"));
+console.log(reverseWords("days. big make things Little"));
