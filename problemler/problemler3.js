@@ -17,6 +17,7 @@
 //? 1- Celsius değerini Fahrenheit değerine dönüştüren bir fonksiyon yazınız? (Celsius × 9/5) + 32 = Fahrenheit
 //? console.log(calFahrenheit(30)) // output: 86
 
+
 //? 2- Belirli bir string ifadenin tersini bulan fonksiyonu yazınız?
 //? console.log(reverseString('hello world')) // output: dlrow olleh
 // function reverseString(text) {
@@ -50,8 +51,8 @@
 
 //? 6- Belirli bir sayının tam bölenlerinin toplamını bulan fonksiyonu yazınız?
 //? console.log(sumOfDivisors(12)) // output: 28
-// let sum = 0;
-// let arr = [];
+let sum = 0;
+let arr = [];
 
 // function sumOfDivisors(number) {
 //   for (let i = 1; number >= i; i++) {
@@ -60,10 +61,43 @@
 //       arr.push(i);
 //     }
 //   }
-//   return arr, sum;
+//   return [arr, sum];
 // }
 
 // console.log(sumOfDivisors(12));
 
 //? 7- Belirli bir sayının asal olup olmadığını bulan fonksiyonu yazınız?
 //? console.log(isPrime(7)) // output: true
+
+// function isPrime(number) {
+//   let top = 0;
+//   for (let i = 2; number > i; i++) {
+//     if (number % i == 0) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+
+// }
+
+// function isPrime(number) {
+//   for (let i = 2; number > i; i++) {
+//     return number % i == 0 ? false : true;
+//   }
+// }
+// console.log(isPrime(12));
+// console.log(isPrime(7));
+
+// function isPrime(number) {
+//   let top = 0;
+//   for (let i = 2; number > i; i++) {
+//     if (number % i == 0) {
+//       top += i;
+//     }
+//   }
+//   let prime = top == 0 ? true : false;
+//   return prime;
+// }
+// console.log(isPrime(12));
+// console.log(isPrime(7));
