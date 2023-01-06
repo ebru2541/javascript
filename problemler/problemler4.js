@@ -181,6 +181,6 @@ let a = [11, 13, 17];
 let b=[];
 
 let toplam=a.concat(b)
-console.log(toplam)
+console.log(toplam.sort())
 console.log([a+","+b]);
 console.log()
