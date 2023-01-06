@@ -142,7 +142,7 @@
 //       console.log(`Bugunku programiniz: ${program}`);
 
 //  //? Dort Islem Hesap Makinasi (2 Sayı bir operator, if-elseif)
-// function calculator(a, b, islem) {
+// function calculator(islem,a,b) {
 //   if (islem === "+") {
 //     return a + b;
 //   } else if (islem === "-") {
@@ -156,7 +156,7 @@
 //     return `+, *, *, / işlemlerinden birini seçiniz`
 //   }
 // }
-// console.log(calculator(2, 4, "+"));
+// console.log(calculator("+",2,4));
 
 // //?Maasi asgari ucretten az olanlara %50 zam,fazla olanlara ise %10 zam yapmak istiyoruz.
 
