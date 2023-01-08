@@ -1,4 +1,3 @@
-
 //? 1. Yetkisiz kullanıcılardan korunmak için e-posta adreslerini gizlemek için bir JavaScript fonksiyonu yazın.
 // Test Verisi: console.log(protect_email("robin_singh@example.com")); "robin...@example.com"
 
@@ -53,10 +52,12 @@
 let sesli = "aeıioöuü";
 
 function sessiz(text) {
-  return [text
-    .split("")
-    .filter((item) => !sesli.includes(item))
-    .join("")];
+  return [
+    text
+      .split("")
+      .filter((item) => !sesli.includes(item))
+      .join(""),
+  ];
 }
 
 console.log(sessiz("day"));
@@ -76,9 +77,35 @@ console.log(sessiz("javascript"));
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-function kareAl(){
-    return arr.map((item) => item ** 2);
+function kareAl(arr) {
+  return arr.map((item) => item * item).reduce((sum, item) => sum+item);
+}
+console.log(kareAl(arr));
+
+//?6 -An anagram is the result of rearranging the letters of a word to produce a new word (see wikipedia).
+function isAnagram(a, b) {
+  let counter = 0;
+  for (let i of a) {
+    for (let j of b) {
+      if (i === j) {
+        counter++;
+      }
+    }
+  }
+  return a.length < counter
+    ? `True, The word ${a} is an anagram of ${b}`
+    : `false, Characters do not match for test case ${a}, ${b}`;
 }
 
+console.log(isAnagram("foefet", "toffee"));
+console.log(isAnagram("dumble", "bumble"));
+console.log(isAnagram("Twoo", "WooT"));
+console.log(isAnagram("apple", "pale"));
 
-console.log(kareAl(arr))
+
+let x = "foefet";
+let y = "toffee";
+function anagram(x, y) {
+  return x.split("").sort().join("") === y.split("").sort().join("");
+}
+console.log(anagram(x, y));
