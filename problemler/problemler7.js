@@ -1,9 +1,11 @@
 
+
 const validEmail = (email) => {
-  return email.includes && email.endsWith(".com") && email.length - email.lastIndexOf(".")
-    ? true
-    : false;
+  return email.includes("@") &&
+    (email.length - email.lastIndexOf(".") <= 4 ||
+      email.length - email.lastIndexOf(".") > 2)
+    ? Alert("Email adresiniz doğru.")
+    : Alert("Email adresiniz yanlış, tekrar deneyiniz.");
 };
 
-console.log(validEmail("asd@sjdf.kgrftghlk.com"));
-
+console.log(validEmail("asd@sjdf.kgrftghlk.co"));
